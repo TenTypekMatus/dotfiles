@@ -57,4 +57,6 @@ echo "Copying dotfiles to their respective location"
 echo "---------------------------------------------"
 cp -r .config ~
 cp -r .themes ~
+cp -r .{eendroroy-colorschemes,waybar} ~
 ln -s ~/.local/share/themes/Adwaita-One-Dark/colors/gtk-dark.css ~/.config/gtk-3.0/gtk.css
+chsh -s /usr/bin/fish "$(whoami)"
