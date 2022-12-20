@@ -1,7 +1,9 @@
 #!/bin/bash
 echo "Downloading git and base-devel group"
 sudo pacman -Syyu --needed --noconfirm base-devel git
+
 clear
+
 echo "MatuusOS installer
 By TenTypekMatus"
 
@@ -19,6 +21,7 @@ else
     exit 1
 fi
 clear
+
 echo "------------------"
 echo "Installing paru"
 echo "------------------"
@@ -33,6 +36,7 @@ echo "---------------------------"
 
 paru -Syu --needed - < ./pkgs.txt
 clear
+
 echo "---------------------------"
 echo "Installing betterlockscreen"
 echo "---------------------------"
@@ -47,6 +51,7 @@ sudo cp betterlockscreen /usr/local/bin/
 sudo cp system/betterlockscreen@.service /usr/lib/systemd/system/
 systemctl enable betterlockscreen@$USER
 clear
+
 echo "---------------------------------------------"
 echo "Copying dotfiles to their respective location"
 echo "---------------------------------------------"
