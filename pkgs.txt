@@ -31,7 +31,6 @@ bc
 betterlockscreen
 binutils
 bison
-blackarch-keyring
 bluez-libs
 bluez-utils
 boost-libs
@@ -552,7 +551,7 @@ perl
 perl-error
 perl-mailtools
 perl-timedate
-pfetch-btw
+pfetch
 picom-jonaburg-fix
 pinentry
 pipes.sh
